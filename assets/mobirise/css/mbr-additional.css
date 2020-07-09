@@ -1251,6 +1251,10 @@ section.lazy-placeholder:after {
 }
 .cid-s4btVJM34X .card-wrapper {
   height: 100%;
+  background: #b2ccd2;
+}
+.cid-s4btVJM34X .card-wrapper .card-box {
+  padding: 0 2rem 2rem;
 }
 @media (max-width: 767px) {
   .cid-s4btVJM34X .card:not(.last-child) {
