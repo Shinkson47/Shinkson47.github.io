@@ -880,7 +880,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rSXfpkTS1E button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1361,12 +1361,12 @@ section.lazy-placeholder:after {
 }
 .cid-rSXfpkTS1E .navbar {
   padding: .5rem 0;
-  background: #333333;
+  background: #000000;
   transition: none;
   min-height: 77px;
 }
 .cid-rSXfpkTS1E .navbar-dropdown.bg-color.transparent.opened {
-  background: #333333;
+  background: #000000;
 }
 .cid-rSXfpkTS1E a {
   font-style: normal;
@@ -1457,7 +1457,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0;
 }
 .cid-rSXfpkTS1E .dropdown .dropdown-menu {
-  background: #333333;
+  background: #000000;
   visibility: hidden;
   display: block;
   position: absolute;
@@ -1529,7 +1529,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rSXfpkTS1E button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -2186,12 +2186,12 @@ section.lazy-placeholder:after {
 }
 .cid-rSXfpkTS1E .navbar {
   padding: .5rem 0;
-  background: #333333;
+  background: #000000;
   transition: none;
   min-height: 77px;
 }
 .cid-rSXfpkTS1E .navbar-dropdown.bg-color.transparent.opened {
-  background: #333333;
+  background: #000000;
 }
 .cid-rSXfpkTS1E a {
   font-style: normal;
@@ -2282,7 +2282,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0;
 }
 .cid-rSXfpkTS1E .dropdown .dropdown-menu {
-  background: #333333;
+  background: #000000;
   visibility: hidden;
   display: block;
   position: absolute;
@@ -2354,7 +2354,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rSXfpkTS1E button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
