@@ -856,7 +856,8 @@
               "color": "#767676"
             },
             "H2": {
-              "color": "#efefef"
+              "color": "#efefef",
+              "text-align": "center"
             }
           },
           "_name": "content4",
@@ -991,7 +992,8 @@
               }
             },
             "H2": {
-              "color": "#efefef"
+              "color": "#efefef",
+              "text-align": "center"
             },
             ".card-title": {
               "color": "#efefef"
@@ -1063,7 +1065,8 @@
               }
             },
             "H2": {
-              "color": "#efefef"
+              "color": "#efefef",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -1151,7 +1154,8 @@
               }
             },
             "H2": {
-              "color": "#efefef"
+              "color": "#efefef",
+              "text-align": "center"
             },
             ".card-title": {
               "color": "#efefef"
@@ -1223,7 +1227,8 @@
               }
             },
             "H2": {
-              "color": "#efefef"
+              "color": "#efefef",
+              "text-align": "center"
             }
           },
           "_name": "services1",
