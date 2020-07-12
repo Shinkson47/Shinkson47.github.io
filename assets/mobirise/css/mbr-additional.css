@@ -1466,7 +1466,7 @@ section.lazy-placeholder:after {
 }
 .cid-s4btVJM34X {
   padding-top: 75px;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
   background-color: #000000;
 }
 .cid-s4btVJM34X h4 {
@@ -1491,10 +1491,6 @@ section.lazy-placeholder:after {
 }
 .cid-s4btVJM34X .card-wrapper {
   height: 100%;
-  background: #b2ccd2;
-}
-.cid-s4btVJM34X .card-wrapper .card-box {
-  padding: 0 2rem 2rem;
 }
 @media (max-width: 767px) {
   .cid-s4btVJM34X .card:not(.last-child) {
@@ -1505,13 +1501,8 @@ section.lazy-placeholder:after {
   color: #efefef;
   text-align: center;
 }
-.cid-s4bwVVCiYN {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f9f295;
-}
-.cid-s4bwVVCiYN .mbr-section-subtitle {
-  color: #767676;
+.cid-s4btVJM34X .card-title {
+  color: #efefef;
 }
 .cid-s4bwNi3oWi {
   padding-top: 90px;
@@ -1552,6 +1543,14 @@ section.lazy-placeholder:after {
 }
 .cid-s4bwNi3oWi .card-title {
   color: #efefef;
+}
+.cid-s4bwVVCiYN {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f9f295;
+}
+.cid-s4bwVVCiYN .mbr-section-subtitle {
+  color: #767676;
 }
 .cid-s4bwO8jIV2 {
   padding-top: 90px;
@@ -2078,7 +2077,7 @@ section.lazy-placeholder:after {
 .cid-rUOYtoevDi {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-rUOYtoevDi h3 {
   text-align: center;
@@ -2111,6 +2110,7 @@ section.lazy-placeholder:after {
 }
 .cid-rUOYtoevDi .section-content-title {
   font-weight: 500;
+  color: #efefef;
 }
 .cid-rUOYtoevDi .progress_value {
   position: relative;
@@ -2128,13 +2128,13 @@ section.lazy-placeholder:after {
   background: rgba(206, 206, 206, 0.4);
 }
 .cid-rUOYtoevDi progress::-webkit-progress-value {
-  background: #149dcc;
+  background: #cc2952;
 }
 .cid-rUOYtoevDi progress[value]::-moz-progress-bar {
-  background: #149dcc;
+  background: #cc2952;
 }
 .cid-rUOYtoevDi progress::-ms-fill {
-  background: #149dcc;
+  background: #cc2952;
 }
 .cid-rUOYtoevDi .progress1 .progressbar-number:before {
   content: '70';
@@ -2159,10 +2159,20 @@ section.lazy-placeholder:after {
     padding-left: 3rem;
   }
 }
+.cid-rUOYtoevDi .progressbar-title p,
+.cid-rUOYtoevDi .progress_value {
+  color: #efefef;
+}
+.cid-rUOYtoevDi .section-content-text {
+  color: #efefef;
+}
+.cid-rUOYtoevDi .mbr-section-title {
+  color: #efefef;
+}
 .cid-rWkyGGUvpv {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-rWkyGGUvpv h3 {
   text-align: center;
@@ -2174,9 +2184,6 @@ section.lazy-placeholder:after {
 .cid-rWkyGGUvpv .mbr-content-text {
   color: #767676;
 }
-.cid-rWkyGGUvpv .panel-item {
-  background: #ffffff;
-}
 .cid-rWkyGGUvpv .card {
   word-wrap: break-word;
 }
@@ -2184,18 +2191,30 @@ section.lazy-placeholder:after {
   font-size: 80px;
   color: #149dcc;
 }
+.cid-rWkyGGUvpv .mbr-section-title {
+  color: #efefef;
+}
+.cid-rWkyGGUvpv H3 {
+  color: #efefef;
+}
+.cid-rWkyGGUvpv H4 {
+  color: #c1c1c1;
+}
 .cid-rUP1GsklSH {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-rUP1GsklSH .mbr-section-subtitle {
   color: #767676;
 }
+.cid-rUP1GsklSH H2 {
+  color: #efefef;
+}
 .cid-rUP1Clj2KX {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-rUP1Clj2KX .counter-container {
   color: #767676;
@@ -2223,21 +2242,22 @@ section.lazy-placeholder:after {
   line-height: 40px;
   transition: all .2s;
   color: #ffffff;
-  background: #149dcc;
+  background: #4f4943;
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 .cid-rUP1Clj2KX .mbr-text {
   text-align: left;
+  color: #c1c1c1;
 }
 .cid-rUP3Z42Usn {
   padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
+  padding-bottom: 0px;
+  background-color: #000000;
 }
 .cid-rUP3Z42Usn .card-box {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 2rem;
 }
 .cid-rUP3Z42Usn h4 {
@@ -2265,10 +2285,13 @@ section.lazy-placeholder:after {
   width: 100%;
   overflow: hidden;
 }
+.cid-rUP3Z42Usn .card-title {
+  color: #efefef;
+}
 .cid-rUOZm3z73D {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #efefef;
+  background-color: #000000;
 }
 .cid-rUOZm3z73D .mbr-section-subtitle {
   color: #767676;
@@ -2277,7 +2300,7 @@ section.lazy-placeholder:after {
 }
 .cid-rUOZm3z73D .timeline-text-content {
   padding: 2rem 2.5rem;
-  background: #ffffff;
+  background: #cccccc;
   margin-left: 2rem;
 }
 .cid-rUOZm3z73D .timeline-text-content p {
@@ -2288,7 +2311,7 @@ section.lazy-placeholder:after {
 }
 .cid-rUOZm3z73D .time-line-date-content p {
   padding: 2rem 2.5rem;
-  background: #ffffff;
+  background: #cccccc;
   float: right;
 }
 .cid-rUOZm3z73D .timeline-element {
@@ -2337,7 +2360,7 @@ section.lazy-placeholder:after {
   border-radius: 50%;
   font-size: 30px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #cccccc;
   top: 20px;
   margin-left: -10px;
 }
@@ -2347,7 +2370,7 @@ section.lazy-placeholder:after {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #ffffff;
+  background-color: #cccccc;
   left: calc(50% - 1px);
   height: calc(100% + 4rem);
 }
@@ -2378,10 +2401,13 @@ section.lazy-placeholder:after {
   display: flex;
   flex-direction: column-reverse;
 }
+.cid-rUOZm3z73D .mbr-section-title {
+  color: #efefef;
+}
 .cid-s4bg3Caik4 {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #efefef;
+  background-color: #000000;
 }
 .cid-s4bg3Caik4 .mbr-section-subtitle {
   color: #767676;
@@ -2390,7 +2416,7 @@ section.lazy-placeholder:after {
 }
 .cid-s4bg3Caik4 .timeline-text-content {
   padding: 2rem 2.5rem;
-  background: #ffffff;
+  background: #efefef;
   margin-left: 2rem;
 }
 .cid-s4bg3Caik4 .timeline-text-content p {
@@ -2401,7 +2427,7 @@ section.lazy-placeholder:after {
 }
 .cid-s4bg3Caik4 .time-line-date-content p {
   padding: 2rem 2.5rem;
-  background: #ffffff;
+  background: #efefef;
   float: right;
 }
 .cid-s4bg3Caik4 .timeline-element {
@@ -2450,7 +2476,7 @@ section.lazy-placeholder:after {
   border-radius: 50%;
   font-size: 30px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #efefef;
   top: 20px;
   margin-left: -10px;
 }
@@ -2460,7 +2486,7 @@ section.lazy-placeholder:after {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #ffffff;
+  background-color: #efefef;
   left: calc(50% - 1px);
   height: calc(100% + 4rem);
 }
