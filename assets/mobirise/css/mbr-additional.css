@@ -1120,8 +1120,8 @@ section.lazy-placeholder:after {
   color: #efefef;
 }
 .cid-rUP7voIBuH {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 0px;
   background: linear-gradient(45deg, #000000, #000000);
 }
 .cid-rUP7voIBuH .btn {
@@ -1370,7 +1370,7 @@ section.lazy-placeholder:after {
   color: #efefef;
 }
 .cid-s4wrjfPIfC {
-  padding-top: 90px;
+  padding-top: 45px;
   padding-bottom: 0px;
   background-color: #000000;
 }
