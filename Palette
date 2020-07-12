@@ -1,0 +1,12 @@
+Palette											
+Base 		    0,   0,   0		=   #000000
+Separated Base  204, 204, 204	=	#CCCCCC
+
+Body 			118, 118, 118	=	#BCBCBC
+
+Sharp   Focus   126, 26,  50	=	#7E1A32
+Subtle  Focus   79,  73,  76	=	#4F494C
+Extreme Focus	248, 242, 152	=	#F8F298
+
+Sharp  Contrast 255, 255, 255	=	#FFFFFF
+Subtle Contrast 239, 239, 239	=	#EFEFEF
