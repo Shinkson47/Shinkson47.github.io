@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/API-Theme.css">
     <link rel="stylesheet" href="assets/css/Article-Clean.css">
     <link rel="stylesheet" href="assets/css/Background.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Text-Shadow-Effects.css">
     <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
     <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
     <link rel="stylesheet" href="assets/css/Features-Clean.css">
@@ -34,14 +35,23 @@
 
 <body id="page-top" style="background-color: rgb(0,0,0);">
     <!-- Start: Main Landing -->
-    <header class="d-flex justify-content-start justify-content-xl-center masthead" data-bs-parallax-bg="true" id="landing" style="min-height: 100%;background-image: url(&quot;null&quot;);background-position: center;background-size: auto;background-color: rgba(0,0,0,0);"><script src="assets/js/three.r119.min.js"></script>
+    <header class="d-flex justify-content-start justify-content-xl-start align-items-xl-center masthead" data-bs-parallax-bg="true" id="landing" style="min-height: 100%;background-image: url(&quot;null&quot;);background-position: center;background-size: auto;background-color: rgba(0,0,0,0);">
+<! --- FOR LOCAL DEMO --- >
+<script src="three.r119.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<! --- END LOCAL DEMO --- >
+
+<! --- FOR LIVE --- >
+<script src="assets/js/three.r119.min.js"></script>
 <script src="assets/js/vanta.net.min.js"></script>
+<! --- END LIVE --- >
+
 <script>
 VANTA.NET({
   el: "#landing",
   mouseControls: true,
   touchControls: true,
-  gyroControls: false,
+  gyroControls: true,
   minHeight: 200.00,
   minWidth: 200.00,
   scale: 1.00,
@@ -52,9 +62,11 @@ VANTA.NET({
   spacing: 20.00
 })
 </script>
-        <div class="container text-break text-center my-auto text-center" data-aos="fade-up" data-aos-delay="150">
-            <h1 class="text-left mb-1" style="color: rgb(211,211,211);font-family: Abel, sans-serif;">Jordan T. Gray</h1>
-            <!-- Start: Animated Type Heading -->				<div class="caption v-middle text-left">
+        <!-- Start: Landing text -->
+        <div class="container text-monospace text-break d-flex d-xl-flex flex-column flex-shrink-1 flex-fill justify-content-center justify-content-xl-start align-items-xl-center text-center" data-aos="fade-up" data-aos-delay="150" style="background-color: rgba(0,0,0,0.36);min-height: 100%;min-width: 100%;width: 100%;">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-left shadow d-inline-block d-xl-flex flex-column flex-shrink-1 flex-fill justify-content-start justify-content-xl-center" style="color: rgb(255,255,255);font-family: Abel, sans-serif;background-color: rgba(4,4,4,0.5);width: 100%;font-size: 324%;">JORDAN T. GRAY				<div class="caption v-middle text-left">
 					<h2 class="cd-headline clip">
 			            <span class="blc">Forever | </span>
 			            <span class="cd-words-wrapper post">
@@ -71,17 +83,18 @@ VANTA.NET({
                           <b class="post">merge review plz.</b>
 			            </span>
 	          		</h1>
-				</div>
-            <!-- End: Animated Type Heading -->
-            <div class="overlay"></div>
+				</div></h1>
+                </div>
+            </div>
         </div>
+        <!-- End: Landing text -->
     </header>
     <!-- End: Main Landing -->
     <!-- Start: Article Clean -->
-    <div data-aos="fade-up" data-aos-delay="50" class="article-clean" style="background-color: rgba(255,255,255,0);width: 100%;height: 100%;">
+    <div class="d-xl-flex justify-content-xl-center align-items-xl-center article-clean" data-aos="fade-up" data-aos-delay="250" style="background-color: rgba(255,255,255,0);width: 100%;min-height: 100%;">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+            <div class="row d-flex" style="background-color: #1c1c1c;">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2 d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center">
                     <!-- Start: Intro -->
                     <div class="intro">
                         <h1 class="text-center" style="color: rgb(211,211,211);">Who?</h1><img class="img-fluid" src="assets/img/desk.jpg"></div>
@@ -97,72 +110,61 @@ VANTA.NET({
                     <!-- End: Text -->
                 </div>
             </div>
-            <div class="row d-xl-flex justify-content-xl-center"><a class="btn btn-outline-primary" role="button" href="cv.html" target="_top" style="background-color: #000000;">CV</a><a class="btn btn-outline-primary" role="button" href="Recommendations.html" target="_top" style="background-color: #000000;">RECOMMENDATIONS</a></div>
+            <div class="row d-xl-flex flex-row justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="background-color: #1c1c1c;padding-bottom: 20px;"><a class="btn btn-outline-primary" role="button" href="cv.html" target="_top" style="background-color: rgba(0,0,0,0);margin: 20px;">Résumé</a><a class="btn btn-outline-primary" role="button" href="Recommendations.html" target="_top" style="background-color: rgba(0,0,0,0);margin: 20px;margin-left: 20px;">Commends</a></div>
         </div>
     </div>
     <!-- End: Article Clean -->
-    <h2 class="text-center" style="color: rgb(211,211,211);font-family: Abel, sans-serif;font-size: 58px;">CURRENT PROJECTS</h2>
     <!-- Start: Highlight OPEX -->
-    <div data-aos="fade-right" class="highlight-phone" style="background-color: rgb(0,0,0);">
-        <div class="container">
-            <div class="col-md-8">
-                <!-- Start: Intro -->
-                <div class="text-left intro">
-                    <h2 style="color: rgb(211,211,211);">Open Phoenix Engine Project</h2>
-                    <p style="font-size: 21px;">An Open Source Java Gaming Engine.<br>My most ambitious project to date.</p><a class="btn btn-outline-primary" role="button" href="OPEX/Home.html" target="_top" style="background-color: #000000;">OPEX project</a></div>
-                <!-- End: Intro -->
-            </div>
-        </div>
-    </div>
-    <!-- End: Highlight OPEX -->
-    <!-- Start: Highlight reference sheets -->
-    <div class="text-right highlight-phone" data-aos="fade-left" style="background-color: rgb(0,0,0);">
-        <div class="container text-right d-xl-flex justify-content-xl-end">
-            <!-- Start: Intro -->
-            <div class="text-right intro">
-                <h2 class="text-right" style="color: rgb(211,211,211);">Language Reference Sheets</h2>
-                <p class="text-right" style="font-size: 21px;">Publicly available personal notes for a variety of languages - for reference or aid getting started in learning another.<br><br>Heavily work in progress, with many sheets planned.</p><a class="btn btn-outline-primary text-right" role="button"
-                    href="https://github.com/Shinkson47/Language-Reference-Sheets" target="_top">Reference sheets</a></div>
-            <!-- End: Intro -->
-        </div>
-    </div>
-    <!-- End: Highlight reference sheets -->
-    <!-- Start: Highlight OPEX -->
-    <div data-aos="fade-right" class="highlight-phone" style="background-color: rgb(0,0,0);">
-        <div class="container">
-            <div class="col-md-8">
-                <!-- Start: Intro -->
-                <div class="text-left intro">
-                    <h2 style="color: rgb(211,211,211);">Resturaunt Ordering System</h2>
-                    <p style="font-size: 21px;">A Collaborative Full Stack project with the ambition of creating a pos-server-ks relationship system that replicates functionality of Tills, Kitchen order screens, and the server that brings them together.</p><a class="btn btn-outline-primary"
-                        role="button" href="https://github.com/Shinkson47/NotDonalds/" target="_top" style="background-color: #000000;">NotDonalds</a></div>
-                <!-- End: Intro -->
-            </div>
-        </div>
-    </div>
+    <div data-aos="fade-right" class="highlight-phone" style="background-color: rgb(0,0,0);margin: 40px 0px 0px 0px;margin-top: 100px;"></div>
     <!-- End: Highlight OPEX -->
     <!-- Start: Discontinued -->
-    <div data-aos="fade-up" data-aos-delay="50" class="features-clean" style="background-color: rgb(0,0,0);">
+    <div data-aos="fade-up" data-aos-delay="50" class="features-clean" style="background-color: rgb(0,0,0);margin: 40px 0px 0px 0px;margin-right: 0;margin-bottom: 0;margin-left: 0;margin-top: 100px;">
+        <!-- Start: Intro -->
+        <div class="intro" style="background-size: auto;">
+            <h2 class="text-center" style="color: rgb(211,211,211);font-family: Abel, sans-serif;font-size: 58px;margin: 40px 0px 0px 0px;margin-top: 150px;">CURRENT PROJECTS</h2>
+        </div>
+        <!-- End: Intro -->
+        <div class="container">
+            <div class="row features" style="background-color: #1c1c1c;padding: 20px;padding-top: 33px;padding-bottom: 29px;">
+                <div class="col-sm-6 col-lg-4 d-xl-flex flex-column align-items-xl-start item" data-aos="fade-right" data-aos-delay="100" style="margin-top: 20px;margin-left: -21px;">
+                    <h3 class="name" style="color: #aaaaaa;">Open Phoenix Engine Project</h3>
+                    <p class="description" style="color: #aaaaaa;"><strong>An Open Source Java Gaming Engine.</strong><br><strong>My most ambitious project to date.</strong></p><a class="btn btn-outline-primary" role="button" href="OPEX/Home.html" target="_top" style="background-color: rgba(0,0,0,0);margin-top: 50px;">OPEX project</a></div>
+                <div
+                    class="col-sm-6 col-lg-4 item" data-aos="fade-up" style="margin-top: 20px;">
+                    <h3 class="name" style="color: #eef4f7;">Language Reference Sheets</h3>
+                    <p class="description" style="color: #aaaaaa;"><strong>Publicly available personal notes for a variety of languages - for reference or aid getting started in learning another.</strong><br><br><strong>Heavily work in progress, with many sheets planned.</strong></p><a class="btn btn-outline-primary text-right"
+                        role="button" href="https://github.com/Shinkson47/Language-Reference-Sheets" target="_top" style="margin-top: 50px;">Reference sheets</a></div>
+            <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-delay="100" style="margin-top: 20px;">
+                <h3 class="name" style="color: #eef4f7;">Resturaunt Ordering System</h3>
+                <p class="description" style="color: #aaaaaa;"><strong>A Collaborative Full Stack project with the ambition of creating a pos-server-ks relationship system that replicates functionality of Tills, Kitchen order screens, and the server that brings them together.</strong></p><a class="btn btn-outline-primary"
+                    role="button" href="https://github.com/Shinkson47/NotDonalds/" target="_top" style="background-color: rgba(0,0,0,0);margin-top: 49px;">NotDonalds</a></div>
+        </div>
+    </div>
+    </div>
+    <!-- End: Discontinued -->
+    <!-- Start: Discontinued -->
+    <div data-aos="fade-up" data-aos-delay="50" class="features-clean" style="background-color: rgb(0,0,0);margin: 40px 0px 0px 0px;margin-right: 0;margin-bottom: 0;margin-left: 0;margin-top: 100px;">
         <!-- Start: Intro -->
         <div class="intro" style="background-size: auto;">
             <h2 class="text-center" style="color: rgb(211,211,211);font-family: Abel, sans-serif;font-size: 58px;">DISCONTINUED PROJECTS</h2>
         </div>
         <!-- End: Intro -->
         <div class="container">
-            <div class="row features">
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-right" data-aos-delay="100"><i class="la la-gamepad icon"></i>
+            <div class="row features" style="background-color: #1c1c1c;padding: 20px;padding-top: 33px;padding-bottom: 29px;">
+                <div class="col-sm-6 col-lg-4 item" data-aos="fade-right" data-aos-delay="100" style="margin-top: 20px;"><i class="la la-gamepad icon"></i>
                     <h3 class="name" style="color: #aaaaaa;">SPLASH PROJECT</h3>
                     <p class="description" style="color: #aaaaaa;">Splash XX was a 2 year long personal development project to develop a game built from a rendering proof of conecpt, seeing 5 majour re-writes, each significantly different.&nbsp;</p><button class="btn btn-outline-primary d-xl-flex"
-                        type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);">SPLASH</button></div>
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-up"><i class="fa fa-clock-o icon"></i>
+                        type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);margin-top: 68px;">SPLASH</button></div>
+                <div class="col-sm-6 col-lg-4 item" data-aos="fade-up" style="margin-top: 20px;"><i class="fa fa-clock-o icon"></i>
                     <h3 class="name" style="color: #eef4f7;">PIXEL FIGHTING</h3>
                     <p class="description" style="color: #aaaaaa;">A Rendering proof of concept built on the .NET and Metro frameworks.<br><br>Built to satisfy an idea of a colonial territory fighting simulator. A fairly complete project, aside from a few small front end flaws.</p><button class="btn btn-outline-primary d-xl-flex justify-content-xl-center align-items-xl-center"
-                        type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);">PIXEL FIGHTING</button></div>
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-delay="100"><i class="fa fa-list-alt icon"></i>
+                        type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);margin-top: 26px;">PIXEL FIGHTING</button></div>
+                <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-delay="100"
+                    style="margin-top: 20px;"><i class="fa fa-list-alt icon"></i>
                     <h3 class="name" style="color: #eef4f7;">CODY</h3>
                     <p class="description" style="color: #aaaaaa;">A collaborative project to produce a rotational encryptional tool with multiple encryption methods alongside an array of decryption and brute force tools; cracking encryption keys using partially known strings, or a provided dictionary.</p>
                     <button
-                        class="btn btn-outline-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);">CODY</button>
+                        class="btn btn-outline-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);margin-top: 26px;">CODY</button>
                 </div>
             </div>
         </div>
@@ -173,10 +175,10 @@ VANTA.NET({
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center" style="padding-top: 25px;padding-bottom: 25px;color: #eef4f7;font-family: Abel, sans-serif;font-size: 58px;">WEAPONS OF CHOICE</h1>
+                    <h1 class="text-center" style="padding-top: 25px;padding-bottom: 25px;color: #eef4f7;font-family: Abel, sans-serif;font-size: 58px;margin-top: 100px;">WEAPONS OF CHOICE</h1>
                 </div>
             </div>
-            <div class="row d-flex d-sm-flex justify-content-center justify-content-sm-center">
+            <div class="row d-flex d-sm-flex justify-content-center justify-content-sm-center" style="margin-top: 50px;">
                 <div class="col-4 col-md-3 text-left d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center" style="width: 300px;min-width: 300px;">
                     <div class="card" data-aos="fade-up" data-aos-delay="50" style="background-color: rgb(0,0,0);width: 250px;">
                         <div class="border-dark shadow d-flex flex-grow-1 flex-fill justify-content-xl-center align-items-xl-center" style="background-color: rgba(249,221,22,0);background-size: contain;height: 250px;background-image: url(&quot;assets/img/JavaLogo.png&quot;);background-repeat: space;max-width: 250px;max-height: 250px;"></div>
@@ -222,14 +224,14 @@ VANTA.NET({
     <!-- End: Language Cards -->
     <!-- Start: Environments -->
     <div class="d-inline-block highlight-phone" style="background-color: rgb(0,0,0);min-width: 600;min-height: 100%;">
-        <h1 class="text-center" data-aos="fade-up" style="padding-top: 25px;padding-bottom: 25px;color: #eef4f7;font-family: Abel, sans-serif;font-size: 58px;">PROFICIENT ENVIRONMENTS</h1>
+        <h1 class="text-center" data-aos="fade-up" style="padding-top: 25px;padding-bottom: 25px;color: #eef4f7;font-family: Abel, sans-serif;font-size: 58px;margin-top: 100px;">PROFICIENT ENVIRONMENTS</h1>
         <!-- Start: IntelliJ -->
-        <div class="d-flex float-left justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-right" style="background-color: rgb(0,0,0);padding: 55px;">
+        <div class="d-flex float-left justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-right" style="background-color: rgb(0,0,0);padding: 55px;margin-top: 50px;">
             <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-size: cover;height: 400px;background-position: center;">
                 <div class="d-xl-flex justify-content-xl-end"><img class="img-fluid d-xl-flex justify-content-xl-end" src="assets/img/IDEALogo.png" style="max-height: 450px;"></div>
             </div>
             <div class="text-left col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 20px;max-width: 800px;">
-                <h1 class="text-left">JetBrain's IntelliJ IDEA</h1>
+                <h1 class="text-left" style="font-size: 70px;">JetBrain's IntelliJ IDEA</h1>
                 <hr>
                 <p>Used for all of my JVM projects, IDEA is a clean, modern, and intelligent environment&nbsp;for JVM languages such as Java, Kotlin, and Scala with plugin support for some others. It's fast and productive. A Free Community Edition and IntelliJ
                     based IDE's for other environments are also available.<br></p>
@@ -238,25 +240,23 @@ VANTA.NET({
         </div>
         <!-- End: IntelliJ -->
         <!-- Start: VS Code -->
-        <div class="d-flex float-right justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-left" style="background-color: rgb(0,0,0);padding: 55px;">
+        <div class="d-flex float-right justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-left" style="background-color: rgb(0,0,0);padding: 55px;margin-top: 50px;">
             <div class="text-center col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 20px;max-width: 800px;">
-                <h1 class="text-right">Microsoft's Visual Studio Code</h1>
+                <h1 class="text-right" style="font-size: 70px;">Visual Studio Code</h1>
                 <hr>
                 <p class="text-right">For everything else Code. VS Code is advanced, Open Source, free, super lightweight, cross platform, and most importantly universal IDE with plugin support for&nbsp;every language in the book.<br></p>
                 <div style="text-align:center"><a class="btn btn-outline-primary d-xl-flex justify-content-xl-center align-items-xl-center" role="button" style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;background-color: rgba(255,255,255,0);" href="https://code.visualstudio.com">VS Code</a></div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-size: cover;height: 400px;background-position: center;">
-                <div><img class="img-fluid d-xl-flex justify-content-xl-start" src="assets/img/VSC%20Logo.png" style="max-height: 450px;"></div>
-            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-size: cover;height: 400px;background-position: center;"><img class="img-fluid d-xl-flex justify-content-xl-start" src="assets/img/VSC%20Logo.png" style="max-height: 450px;"></div>
         </div>
         <!-- End: VS Code -->
         <!-- Start: IntelliJ -->
-        <div class="d-flex float-left justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-right" style="background-color: rgb(0,0,0);padding: 55px;">
+        <div class="d-flex float-left justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-right" style="background-color: rgb(0,0,0);padding: 55px;margin-top: 50px;">
             <div class="d-flex float-right d-xl-flex justify-content-xl-end col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-size: cover;height: 400px;background-position: center;">
                 <div><img class="img-fluid d-xl-flex justify-content-xl-end" src="assets/img/GitHubLogo.png" style="max-height: 450px;"></div>
             </div>
             <div class="text-center col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 20px;max-width: 800px;">
-                <h1 class="text-left">GitHub</h1>
+                <h1 class="text-left" style="font-size: 70px;">GitHub</h1>
                 <hr>
                 <p class="text-left">Go-to Industry standard Git implementation for project collaboration, protection, archival, and version control in the foundation every project. Built for developers, GitHub Hosts over 100 million repositories - including this site, hosted
                     using GitHub Pages! Various projects of mine are even included in the Arctic Code Vault Project.</p>
@@ -267,9 +267,9 @@ VANTA.NET({
         </div>
         <!-- End: IntelliJ -->
         <!-- Start: VS Code -->
-        <div class="d-flex float-right justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-left" style="background-color: rgb(0,0,0);padding: 55px;">
+        <div class="d-flex float-right justify-content-md-start justify-content-xl-center row clearmargin clearpadding row-image-txt" data-aos="fade-left" style="background-color: rgb(0,0,0);padding: 55px;margin-top: 50px;">
             <div class="text-center col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 20px;max-width: 800px;">
-                <h1 class="text-right">Unity Editor</h1>
+                <h1 class="text-right" style="font-size: 70px;">Unity Editor</h1>
                 <hr>
                 <p class="text-right"><strong>Collaberating on peer's projects as a scripter, i've constructed MonoBehavior components, StateMachine AI behaviours, Mesh generation factories and World population systems, All on Unity Editor Pro. As the</strong>&nbsp;Core Visual
                     Editor, is the pinacle tool for developing with the Unity Engine; A powerful and intuitive gaming engine that's free to begin learning.</p>
