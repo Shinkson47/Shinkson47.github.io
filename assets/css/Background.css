@@ -1,3 +1,8 @@
+.rounded-block {
+  border-radius: 50px;
+  border-color: rgba(0,0,0,0);
+}
+
 .large-header {
   position: relative;
   width: 100%;
