@@ -16,10 +16,6 @@ div.jumbotron.hero-photography {
   background-image: url('hero-background-photography.jpg');
 }
 
-div.jumbotron.hero-technology {
-  background-image: url('hero-background-technology.jpg');
-}
-
 h1.hero-title, h2.hero-title, h3.hero-title {
   text-shadow: 0 3px 3px rgba(0,0,0,0.4);
   color: #fff;
@@ -30,18 +26,5 @@ p.hero-subtitle {
   margin: 25px auto;
   padding: 10px 15px;
   color: #fff;
-}
-
-.MainHeader {
-}
-
-.header-default {
-  font-size: 58px;
-  width: 596px;
-}
-
-.header-default {
-  color: rbg(211,211,211);
-  font-family: 'Abel';
 }
 
