@@ -1,0 +1,131 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #000000;
+}
+
+.credits {
+  text-decoration: none;
+  font: normal 8px "C64 User Mono";
+  color: #777;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+
+.credits:hover {
+  color: #aaa;
+}
+
+/* *
+ * The blue C64 screen */
+
+.spacebar, section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -320px;
+  color: #6076c5;
+  font: normal 16px "C64 User Mono";
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* Border of the sceen */
+
+section:before {
+  position: absolute;
+  left: -64px;
+  right: -64px;
+  top: -74px;
+  bottom: -74px;
+  content: "";
+  background: #7d7dff;
+  z-index: -1;
+}
+
+/* Inside screen */
+
+section:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background: #4242e7;
+  z-index: -1;
+}
+
+/* *
+ * Decrunching */
+
+section.bluescreen:before {
+  animation-name: decrunch;
+  animation-delay: 15s;
+  animation-duration: 0.25s;
+  animation-iteration-count: 14;
+  animation-timing-function: steps(1);
+}
+
+/* *
+ * Act like a real C64 once space bar has been pressed */
+
+.spacebar:valid + section li + li {
+  display: none;
+}
+
+.spacebar:valid + section, .spacebar:valid + section:before, .spacebar:valid + section + section {
+  animation-name: none;
+}
+
+.spacebar:valid + section + section {
+  visibility: hidden;
+}
+
+.spacebar {
+  background: transparent;
+  outline: none;
+  padding: 0;
+  border: none;
+  resize: none;
+}
+
+.spacebar:valid {
+  z-index: 20;
+  margin-top: -104px;
+  text-indent: -1em;
+  height: 19em;
+  overflow: hidden;
+}
+
+.c64-button {
+  width: 98%;
+  height: 25px;
+  border-width: 5px;
+  font-family: 'C64 Pro Mono';
+  border-color: transparent #7d7dff transparent #7d7dff;
+  color: #7f7fff;
+  padding-bottom: 30px;
+  box-shadow: none;
+}
+
+.c64-button:hover {
+  border-radius: 0px;
+  font-style: italic;
+  background-color: #7f7fff;
+  color: #4242e7;
+  border-color: #7f7fff;
+}
+
+/* *
+ * Fonts */
+
