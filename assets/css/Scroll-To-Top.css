@@ -18,26 +18,6 @@
   z-index: 9999;
 }
 
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
-}
-
-.cd-top.cd-is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top.cd-fade-out {
-  opacity: .5;
-}
-
-.no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-
 @media only screen and (min-width: 768px) {
   .cd-top {
     right: 20px;
