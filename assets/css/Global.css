@@ -7,17 +7,20 @@
   border: 0px;
 }
 
+.cyberpunk > * {
+  font-family: 'Quicksand';
+  color: rgb(239, 149, 42);
+}
+
 .cyberpunk {
-  font-family: 'Despairs';
   --aug-border: initial;
   --aug-inlay: initial;
   --aug-inlay-bg: rgb(0,0,0);
   --aug-inlay-opacity: 0.9;
-  --aug-border-bg: rgb(255,165,0);
+  --aug-border-bg: rgb(239, 149, 42);
   --aug-border-all: 2px;
   padding-left: 30px;
   padding-right: 30px;
-  color: white;
 }
 
 .btn.cyberpunk {
