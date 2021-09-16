@@ -53,12 +53,6 @@ body {
   --hud-content-spacing: 2rem;
   background-color: var(--hud-background);
   box-sizing: border-box;
-  display: flex;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 .c-hud:before, .c-hud:after {
   background-color: var(--hud-background);
@@ -75,7 +69,7 @@ body {
 .c-hud:after {
   animation: hud-bottom 1s;
   bottom: 0;
-  box-shadow: inset 0 1px var(--hud-foreground), 0 0 3px var(--hud-foreground);
+  box-shadow: inset 0 -1px var(--hud-foreground), 0 0 3px var(--hud-foreground);
 }
 
 .c-hud__inner {
@@ -86,7 +80,7 @@ body {
   background-size: 120px 240px;
   height: 100%;
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 .c-hud__inner:before, .c-hud__inner:after {
