@@ -47,3 +47,11 @@ p.c {
   transform: scale(1.1);
 }
 
+.c-tile {
+  padding: 30px;
+  --aug-border-all: 1px;
+}
+
+.col-sm-6.col-xs-12 {
+}
+

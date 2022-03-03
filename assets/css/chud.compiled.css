@@ -53,6 +53,12 @@ body {
   --hud-content-spacing: 2rem;
   background-color: var(--hud-background);
   box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 100px;
+  width: 100%;
 }
 .c-hud:before, .c-hud:after {
   background-color: var(--hud-background);
