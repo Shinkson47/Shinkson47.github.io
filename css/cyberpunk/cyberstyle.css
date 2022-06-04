@@ -1,0 +1,265 @@
+/*
+
+  Stylesheet for Jordan T. Gray's cyberpunk style.
+  Created for CTEC3905 on 19 Jan 2022.
+  http://shinkson47.in
+
+  ``` HTML
+    ...
+    <element class="cyberpunk">...</element>
+    ...
+  ```
+
+  The 'cyberpunk' classification is for a parent container.
+  Styles automatically apply to it's styles to children.
+
+
+  Color Pallete 
+  ===============
+  BLACK	#000
+  BACK	#1d1d1d
+  YELLOW	#ffef08
+  BLUE	#01d5f0
+*/
+
+/*============================================================
+        Public Cyberpunk Fonts
+============================================================*/
+
+@import url('https://fonts.cdnfonts.com/css/tracer');
+@import url('https://fonts.cdnfonts.com/css/nu-kei');
+
+.cyberpunk,
+.background {
+  background: url('https://source.unsplash.com/random/1860x720/?neon-girl,cyberpunk,neon,dark-abstract');
+  /* background-image: url('https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); */
+  background-size: cover;
+
+  background-color: darkslateblue;
+}
+
+@media screen and (min-width: 720px) {
+  .cyberpunk {
+    background: url('https://source.unsplash.com/random/1920x1080?cyberpunk');
+    background-size: cover;
+  }
+}
+
+/*============================================================
+            Borders
+============================================================*/
+
+/* Enables and configures augmented borders. */
+.cyberborder,
+.cyberpunk nav a,
+.cyberpunk cyber-container {
+  /* Enable borders and inlay (background). */
+  --aug-border: initial;
+  --aug-inlay: initial;
+
+  /* Set border thickness */
+  --aug-border-all: 2px;
+
+  /* Set gap between border and inlay, similar to padding. */
+  --aug-inlay-all: 0px;
+
+  padding: 30px;
+  color: white;
+
+  /* Make inlay (background) partially transparent */
+  --aug-inlay-opacity: 0.9;
+
+  /* Set default colors */
+  --aug-inlay-bg: var(--cyber-color-black);
+  --aug-border-bg: var(--cyber-color-yellow);
+}
+
+.cyberpunk cyber-container {
+  /* Alters how large of an effect border augmentations have. */
+  --aug-b-extend1: 50%;
+  --aug-t-extend1: 50%;
+
+  /* Move augmentations on one edge to the left. */
+  --aug-t-offset: -20%;
+}
+
+/*============================================================
+            Nav bar
+============================================================*/
+
+.cyberpunk nav {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+
+  color: black;
+  background-color: rgba(0, 0, 0, 0.582);
+
+  display: inline-flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 0px;
+}
+
+.cyberpunk nav a {
+  width: 100px;
+  height: 30px;
+
+  padding-top: 0;
+
+  text-align: left;
+  justify-content: start;
+
+  --aug-inlay-bg: rgba(0, 0, 0, 0.308);
+  --aug-border-bg: rgba(151, 151, 151, 0.308);
+}
+
+.cyberpunk nav a.selected,
+.cyberpunk nav a:hover {
+  --aug-inlay-bg: var(--cyber-color-yellow);
+}
+
+.cyberpunk nav a.selected *,
+.cyberpunk nav a.selected,
+.cyberpunk nav a:hover *,
+.cyberpunk nav a:hover {
+  color: black;
+}
+
+.cyberpunk nav a.selected:hover,
+.cyberpunk nav a:active {
+  --aug-inlay-bg: #a19600e1;
+}
+
+.cyberpunk nav h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/*============================================================
+            Text
+============================================================*/
+
+.cyberpunk *,
+.cyberbutton {
+  font-family: 'Nu Kei', sans-serif;
+  font-weight: 100;
+
+  --cyber-color-yellow: #ffef08;
+  --cyber-color-black: black;
+  --cyber-color-bg: #1d1d1d;
+  --cyber-color-blue: #fff;
+  --cyber-color-red: rgb(180, 0, 0);
+  --cyber-color-purple: rgb(11, 14, 43);
+  --cyber-color-light-purple: rgb(80, 0, 220);
+  --cyber-color-purple-transparent: rgba(11, 21, 43, 0.851);
+}
+
+a.cyberbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.cyberbutton:hover {
+  text-decoration: underline;
+}
+
+.cyberpunk h1 {
+  font-family: 'Tracer 3D', sans-serif;
+}
+
+.cyberpunk h2 {
+  font-family: 'Tracer Gradient', sans-serif;
+}
+
+.cyberpunk h3,
+.cyberpunk h4,
+.cyberpunk h5,
+.cyberpunk h6,
+.cyberpunk h7,
+.cyberpunk h8,
+.cyberpunk header {
+  font-family: 'Tracer', sans-serif;
+  color: var(--cyber-color-yellow);
+}
+
+/*============================================================
+            Button
+============================================================*/
+
+.cyberbutton,
+.cyberpunk button {
+  /* TODO Margin is shit fix. */
+  margin-bottom: 30px;
+  background-color: transparent;
+
+  /* Remove default button border*/
+  border: none;
+
+  /* Size */
+  width: 150px;
+  height: 50px;
+
+  /* Enable border */
+  /* Initial is used to enable things in this framework. */
+  --aug-inlay: initial;
+  --aug-border: initial;
+
+  /* Remove all borders */
+  --aug-border-all: 0px;
+
+  /* Add left and right borders */
+  --aug-border-right: 3px;
+  --aug-border-left: 2px;
+
+  /* Set border color */
+  --aug-border-bg: aqua;
+  --aug-inlay-bg: var(--cyber-color-light-purple);
+
+  /* Remove gap between border and inlay. */
+  --aug-inlay-all: -1px;
+
+  /* Move the bottom rect to the right */
+  --aug-b-offset: 20%;
+
+  /* And reduce it's height, so it doesn't interfere with the text. */
+  --aug-b: 10px;
+}
+
+.cyberbutton,
+.cyberpunk button,
+.cyberbutton *,
+.cyberpunk button * {
+  /* Text */
+  font-size: large;
+  color: var(--cyber-color-blue);
+  text-decoration: none;
+}
+
+.cyberpunk input,
+.cyberpunk textarea {
+  outline: none;
+  padding: 20px;
+  margin: 30px 0px;
+
+  /* Initial is used to enable things in this framework. */
+  --aug-border: initial;
+
+  --aug-border-all: 10px;
+
+  --aug-border-bg: yellow;
+  --aug-inlay-bg: yellow;
+
+  --aug-inlay: initial;
+
+  --aug-clip-tl1: initial;
+  --aug-clip-bl1: initial;
+  --aug-clip-tr1: initial;
+  --aug-clip-br1: initial;
+
+  --aug-tr-inset2: 60%;
+  --aug-br-inset1: 20%;
+}

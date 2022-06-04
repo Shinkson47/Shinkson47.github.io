@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Lib to shape borders. -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+
+  <!-- js api wrapper for sending email, and my script to use it-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/mail.js"></script>
+
+  <link rel="stylesheet" href="css/generic/style.css">
+  <link rel="stylesheet" href="css/generic/position.css">
+  <title>Jordan T. Gray - Contact</title>
+</head>
+
+<body class="cyberpunk">
+
+  <!-- 
+    =============================
+        Navigation 
+    =============================
+  -->
+
+  <div id="navhandle">&#8801;</div>
+
+  <nav id="nav">
+    <a data-augmented-ui="br-clip" href="index.html">
+      <h2>Page 1</h2><br>Home
+    </a>
+    <a data-augmented-ui="br-clip" href="portfolio.html">
+      <h2>Page 2</h2><br>Portfolio
+    </a>
+    <!-- <a data-augmented-ui="br-clip" href="about.html">
+      <h2>Page 3</h2><br>About
+    </a> -->
+    <a data-augmented-ui="br-clip" href="#" class="selected">
+      <h2>Page 3</h2><br>Contact
+    </a>
+  </nav>
+
+  <section id="ContactSection" class="column center">
+
+  <!-- 
+    =============================
+        Header
+    =============================
+  -->
+
+    <header class="dimmed">
+      <h1>
+        Get in contact with me
+      </h1>
+
+      <span style="color: white; text-align: center;">
+        Or send me an E-Mail directly: 
+      </span>
+      <a class="cyberbutton" href="mailto: business@jordantgray.uk">business@jordantgray.uk</a>
+      
+    </header>
+    <br>
+
+
+  <!-- 
+    =============================
+        Contact form
+    =============================
+  -->
+    <form action="javascript:void(0);" id="ContactForm" class="column cyberborder"
+      data-augmented-ui="tr-2-clip-x bl-clip">
+
+      <label for="ContactName">Name:</label>
+      <input type="text" name="ContactName" id="ContactName" placeholder="Jane Doe" required data-augmented-ui>
+
+      
+      <label for="ContactDeets">What E-Mail can I use to contact you?</label>
+      <input type="email" id="ContactDeets" name="ContactDeets" placeholder="me@email.com" required data-augmented-ui>
+
+      <label for="ContactMessage">Message:</label>
+      <textarea id="ContactMessage" name="ContactMessage" placeholder="Hello!" rows="10" cols="20" required data-augmented-ui></textarea>
+
+      <button onclick="send()" type="button" data-augmented-ui="br-clip" value="Send It!">Send it!</button>
+
+      <span id="ContactFdbk" style="color: red"></span>
+    </form>
+  </section>
+  
+  <script src="js/general.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+/*
+
+  Stylesheet for unique rules specific to this particular site,
+  which which extends cyberstyle.css.
+
+  
+  Created for CTEC3905 on 19 Jan 2022.
+  http://shinkson47.in
+
+*/
+@import url(../cyberpunk/cyberstyle.css);
+
+/*	========================================
+          Misc Elements
+  ======================================== */
+
+hr {
+  margin: 10px auto;
+  width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0px;
+}
+
+header {
+  height: 5%;
+  font-size: 2em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+section {
+  min-height: 100vh;
+  height: max-content;
+  width: 100%;
+}
+
+/*	========================================
+          Landing
+  ======================================== */
+
+.landing-strip header {
+  padding: 30px;
+  flex-direction: column;
+  text-shadow: 3px 1px 15px #000000, 3px 1px 5px #000000;
+}
+
+.landing-strip header h1 {
+  margin-bottom: 0;
+}
+
+.landing-strip header h5 {
+  margin-top: 0;
+}
+
+.landing-strip {
+  background-color: var(--cyber-color-purple-transparent);
+  color: var(--cyber-color-yellow);
+}
+
+/*	========================================
+          Navigation bar
+  ======================================== */
+
+/* Mobile first fullscreen navigation button container. */
+nav {
+  margin-top: 0.7em;
+  margin-right: 4em;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+
+  transition: opacity 0.5s, visibility 0.7s;
+  opacity: 0;
+}
+
+nav a {
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 0.7em;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 0.75em;
+  color: black;
+
+  margin-left: 1em;
+  display: inline;
+}
+
+/*
+  Hover / focus indicator.
+  A small line at the bottom of the element
+*/
+nav a {
+  /* We don't seem to be able to mutate the size of a background color, so i use this function
+    to create a background image of a solid color that can be manipulated in size. */
+  background-image: linear-gradient(var(--cyber-color-yellow), var(--cyber-color-yellow));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-size 0.3s ease;
+}
+
+a:hover {
+  background-size: 100% 2px;
+}
+
+nav .circled {
+  border: 1px solid black;
+}
+
+nav.open {
+  opacity: 1;
+}
+
+#navhandle {
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+
+  z-index: 3;
+}
+
+#nav {
+  visibility: hidden;
+}
+
+nav#nav.open {
+  visibility: visible;
+}
+
+.darkernav {
+  background-color: rgba(0, 0, 0, 0.835);
+}
+
+/* When not small */
+@media screen and (min-width: 800px) and (min-height: 690px) {
+  /* Hide the handle */
+  #navhandle {
+    display: none;
+  }
+
+  /* And show the navbar. */
+  #nav {
+    visibility: visible;
+    height: min-content;
+    flex-direction: row;
+    opacity: 1;
+    transition: background-size 300ms ease;
+  }
+}
+
+/*	========================================
+        Landing Terminal
+  ======================================== */
+
+@media screen and (max-width: 380px) {
+  header {
+    text-align: center;
+  }
+
+  .landing-strip header {
+    padding: 0;
+  }
+
+  .terminal {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .terminal a#link {
+    word-wrap: break-word;
+  }
+
+  .terminal #destination {
+    margin: 20px 0px;
+  }
+
+  .terminal .nanobuttons {
+    flex-direction: column;
+  }
+  .terminal .nanobuttons a {
+    width: 100%;
+  }
+}
+
+.terminal {
+  margin: 50px;
+
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.851);
+  color: white;
+
+  box-shadow: 0px 6px 15px 5px rgba(0, 0, 0, 0.78);
+}
+
+.terminal * {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.terminal .head {
+  background: radial-gradient(circle, rgb(236, 236, 236) 0%, rgb(238, 238, 238) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 25px;
+
+  padding-left: 2px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* The container holding the window controls. */
+.terminal .head div {
+  border-radius: 20px;
+  margin: 0;
+  border: 1px solid black;
+  width: 17.5px;
+  height: 15px;
+
+  margin-top: 4.5px;
+  margin-left: 2.5px;
+}
+
+/* The span holding the window title. */
+.terminal .head span {
+  display: inline-block;
+
+  /* Center the text */
+  vertical-align: middle;
+  text-align: center;
+  line-height: 30px;
+
+  width: 100%;
+  color: black;
+}
+
+/* Colors for all of the window controls. */
+.terminal .head .close {
+  background-color: rgb(238, 91, 82);
+  border-color: rgb(214, 69, 61);
+}
+
+.terminal .head .close:hover {
+  background-color: rgb(214, 69, 61);
+}
+
+.terminal .head .close:active {
+  background-color: rgb(146, 47, 42);
+}
+
+.terminal .head .minimise {
+  background-color: rgb(246, 188, 55);
+  border-color: rgb(219, 159, 40);
+}
+
+.terminal .head .minimise:hover {
+  background-color: rgb(219, 159, 40);
+}
+
+.terminal .head .minimise:active {
+  background-color: rgb(160, 117, 31);
+}
+
+.terminal .head .maximise {
+  background-color: rgb(41, 199, 69);
+  border-color: rgb(28, 170, 52);
+}
+
+.terminal .head .maximise:hover {
+  background-color: rgb(28, 170, 52);
+}
+
+.terminal .head .maximise:active {
+  background-color: rgb(19, 121, 36);
+}
+
+.terminal .content {
+  padding: 10px;
+}
+
+/* Custom list style */
+.terminal ul {
+  /* remove gap between list and it's 'header'. */
+  margin-top: 0px;
+
+  /* I'll choose how to style it, thanking you */
+  list-style-type: none;
+}
+
+/* Custom list item styling. */
+.terminal li::before {
+  content: "├─ ";
+}
+
+.terminal ul ul::before {
+  margin-left: -40px;
+  content: "└───┐";
+}
+
+.terminal ul ul::after {
+  margin-left: -1.5px;
+}
+
+.terminal ul::after {
+  content: "┴";
+}
+
+.terminal ul ul li::before {
+  margin-left: -1.5px;
+}
+
+.terminal a {
+  text-decoration: none;
+  color: white;
+}
+
+/* text editor button style links*/
+.terminal .nanobuttons a {
+  font-weight: 1000;
+  margin-right: 10px;
+}
+
+.terminal .nanobuttons a::before {
+  background-color: white;
+  color: black;
+  content: "^➜";
+  margin-right: 10px;
+}
+
+.terminal .nanobuttons a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/*	========================================
+        Portfolio header
+  ======================================== */
+
+.portfolio header {
+  min-height: 100vh;
+}
+
+.portfolio header h1 {
+  border-bottom: 1px solid var(--cyber-color-yellow);
+}
+
+.portfolio header p {
+  color: white;
+}
+
+.portfolio header span {
+  font-size: xx-small;
+}
+
+.portfolio header .top {
+  text-align: center;
+  font-size: xx-small;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.portfolio section,
+.portfolio header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 780px) {
+  .portfolio header {
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+
+  .portfolio header .top {
+    text-align: start;
+  }
+}
+
+/*	========================================
+        Portfolio content
+  ======================================== */
+
+.portfolio section {
+  background-color: var(--cyber-color-purple);
+  color: var(--cyber-color-yellow);
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+.portfolio section > h2 {
+  font-size: xxx-large;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.portfolio-contents {
+  color: black;
+
+  
+  --aug-inlay-bg: var(--cyber-color-yellow);
+  --aug-border-bg: transparent;
+
+  background-color: #0000008a;
+  flex: 1 1 200px;
+  min-width: 200px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-contents hr {
+  border-color: black;
+}
+
+.portfolio-contents h1 {
+  font-size: 2em;
+}
+
+.portfolio-contents-slim {
+  --aug-border-bg: var(--cyber-color-yellow);
+  --aug-inlay-bg: var(--cyber-color-purple-transparent);
+  --aug-inlay-all: 10px;
+  align-content: start;
+}
+
+.portfolio-contents-slim img,
+.portfolio-contents img {
+  object-fit: contain;
+  height: auto;
+  min-width: 250px;
+}
+
+/*
+Dumb work around for a problem which could be
+solved by the ':has' selector, but only safari supports it...
+ */
+.slim-container {
+  gap: 0px !important;
+}
+
+/* .portfolio section article:has(div.portfolio-contents) */
+.portfolio section article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio a {
+  margin: 0px 10px 10px 0px
+}
+
+/* This list is the 'attributes' associated with each project. */
+.portfolio section ul {
+  list-style-type: none;
+
+  gap: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding-inline-start: 0;
+  margin-block-start: 0;
+}
+
+.portfolio section li {
+  font-weight: bolder;
+  background-color: lightgray;
+  --aug-border-bg: gray;
+  
+
+  /* Room for borders */
+  padding: 10px;
+
+  /* Enable borders */
+  --aug-border: initial;
+
+  /* Clear all borders */
+  --aug-border-all: 0px;
+
+  /* add left and bottom borders back */
+  --aug-border-left: 3px;
+  --aug-border-bottom: 3px;
+
+  /* Reduce how big the border modifications are */
+  --aug-bl-inset1: -10px;
+  --aug-b-inset1: -10px;
+}
+
+.portfolio section p {
+  color: black;
+}
+
+
+@media screen and (min-width: 1500px) { 
+  .portfolio section p {
+    text-align: center; 
+  } 
+}
+
+
+@media screen and (min-width: 450px) {
+  /* .portfolio section a {
+    margin-top: 30%;
+  }
+ */
+
+  .portfolio section {
+    padding: 0% 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio-contents-slim .half-width {
+    width: 100%;
+  }
+}
+
+/*	========================================
+          Portfolio Content
+  ======================================== */
+
+#ContactSection header {
+  text-align: center;
+}
+
+
+/*	========================================
+          Misc
+  ======================================== */
+
+.dimmed {
+  background: radial-gradient(
+    circle at top left,
+    rgba(17, 44, 120, 1) 0%,
+    rgba(13, 30, 69, 1) 9%,
+    var(--cyber-color-purple-transparent) 11%,
+    var(--cyber-color-purple-transparent) 100%
+  );
+}
+
+/* TODO */
+/* Media query for page printing */
+@media print {
+html {
+  overflow: visible;
+}
+
+  body {
+    overflow: visible;
+    background-color: white;
+    color: black;
+  }
+
+  nav a {
+    color: black;
+  }
+}
