@@ -1,0 +1,57 @@
+.c {
+  --hud-background: #1D1726;
+  --hud-foreground: #BAFEB6;
+  --hud-content: white;
+}
+
+.c {
+  --aug-border-bg: var(--hud-content);
+  --aug-border-all: 3px;
+  --aug-inlay-opacity: 1;
+  --aug-inlay-bg: black;
+  color: var(--hud-content);
+}
+
+h1.c {
+  font-family: 'Despairs';
+  font-size: 4rem;
+}
+
+svg.c {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+p.c {
+  font-size: 4em;
+}
+
+.btn.c {
+  width: 200px;
+  --aug-border-bg: white;
+  color: black;
+  --aug-inlay-bg: white;
+}
+
+.btn.c:hover {
+  --aug-inlay-bg: #a5dde2;
+  --aug-border-bg: white;
+}
+
+.grow {
+  transition: all .4s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.c-tile {
+  padding: 30px;
+  --aug-border-all: 1px;
+}
+
+.col-sm-6.col-xs-12 {
+}
+

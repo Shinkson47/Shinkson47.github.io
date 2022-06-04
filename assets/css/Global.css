@@ -1,0 +1,46 @@
+.rounded-block {
+  border-radius: 50px;
+  border-color: rgba(0,0,0,0);
+}
+
+.card {
+  border: 0px;
+}
+
+.cyberpunk > * {
+  font-family: 'Quicksand';
+  color: rgb(239, 149, 42);
+}
+
+.cyberpunk {
+  --aug-border: initial;
+  --aug-inlay: initial;
+  --aug-inlay-bg: rgb(0,0,0);
+  --aug-inlay-opacity: 0.9;
+  --aug-border-bg: rgb(239, 149, 42);
+  --aug-border-all: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn.cyberpunk {
+  width: 200px;
+  --aug-border-bg: white;
+  color: black;
+  --aug-inlay-bg: white;
+}
+
+.btn.cyberpunk:hover {
+  --aug-inlay-bg: orange;
+  --aug-border-bg: white;
+}
+
+h1.cyberpunk {
+  font-family: 'Despairs';
+  font-size: 4rem;
+}
+
+* {
+  font-family: 'Quicksand';
+}
+
